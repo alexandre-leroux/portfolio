@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="agenda.css"/>
+    <title>AGENDA</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div id="div-menu-hamb">
+        <a href=""><img id="menu-hamb" src="fichiers/hamburger-menu.PNG" alt="menu hamburger"></a>
+        </div>
+
+        <div id="div-img-agenda">
+        <img id="logo-agenda" src="fichiers/address-book.png" alt="logo agenda">
+        </div>
+
+        <h1>AGENDA</h1>
+
+        <a href="" title="Semaine précédente"><img class="fleches" src="fichiers/left-arrow.png" alt="boutton gauche"></a>
+        <a href="" title="Semaine suivante"><img class="fleches" src="fichiers/right-arrow.png" alt="bouton droite"></a>
+
+        <h2>OCTOBRE 2020</h2>
+
+        <form method="post" action="form.php">
+        <select name="pets" id="pet-select">
+            <option value="jour">Jour</option>
+            <option value="semaine" selected>Semaine</option>
+            <option value="mois">Mois</option>
+            <option value="trimestre">Trimestre</option>
+            <option value="année">Année</option>
+        </select>
+        </form>
+
+    </header>
+
+    
+    <main>
+
+        <aside>
+
+            <form action="formulaire.html" method="POST">
+                    <button id="boutton-creer">
+                        <img id="img-bouton-creer" src="fichiers/plus.png" alt="créer">
+                        <h4>Créer</h4>
+                    </button>
+            </form>
+
+            <table id="mini-agenda">
+                    <tr>
+                        <th colspan="5">OCTOBRE</th>  
+                        <td><a href="" title="Mois précédent"><img class="bouttons-mini-agenda" src="fichiers/left-arrow.png" alt="boutton gauche"></a></td>
+                        <td><a href="" title="Mois suivant"><img class="bouttons-mini-agenda" src="fichiers/right-arrow.png" alt="boutton droit"></a></td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>J</td>
+                        <td>V</td>
+                        <td>S</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td class="autre-mois">28</td>
+                        <td class="autre-mois">29</td>
+                        <td class="autre-mois">30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>  
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td class="autre-mois">1</td>
+                    </tr>
+            </table>
+
+       
+            <div id="mes-agendas">
+                <h3>Mes agendas</h3>
+                <form id="form-mes-agendas" action="">
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Alexandre-Leroux" id="Alexandre-Leroux" checked/> <label for="Alexandre-Leroux">Alexandre Leroux</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Mamie-Simone" id="Mamie-Simone" checked /> <label for="Mamie-Simone">Mamie Simone</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Création-de-chandeliers" id="Création-de-chandeliers" checked /> <label for="Création-de-chandeliers">Création de chandeliers</label></div>
+                    <div class="agendas-a-cocher"><input type="checkbox" name="Soirée-repassage" id="Soirée-repassage" checked /> <label for="Soirée-repassage">Soirée repassage</label></div>
+                </form>
+            </div>
+
+        </aside>
+
+
+        <section id="section-centrale">
+
+            
+
+            
+            <table>
+
+                <thead>
+                    <tr>
+                        <th id="cellule-vide" ></th>
+                        <th class="tableau-jours">LUN.<br>5</th>
+                        <th class="tableau-jours">MAR.<br>6</th>
+                        <th class="tableau-jours">MER.<br>7</th>
+                        <th class="tableau-jours">JEU.<br>8</th>
+                        <th class="tableau-jours">VEN.<br>9</th>
+                        <th class="tableau-jours">SAM.<br>10</th>
+                        <th class="tableau-jours">DIM.<br>11</th>
+                    </tr>
+                </thead>
+
+
+               <tbody>
+
+                    <tr class="bordure-td">
+                        <td rowspan="2">1 am</td>
+                        <td></td>
+                        <td rowspan="5" class="agenda-mamie"><strong>Voir mamie à l'hopital</strong><br>0 à 3 am </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bordure-td">
+                      
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+              
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                     
+                    </tr>
+                     <tr>
+                        <td rowspan="2">3 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+              
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">4 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                      
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5 am</td>
+                        <td class="agenda-alex" rowspan="4"><strong>Train</strong><br>4:30 à 6:30 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                     
+                    </tr>
+                     <tr>
+                        <td rowspan="2">6 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class=agenda-mamie rowspan="2"><strong>Départ à Las-Vegas pour fêter mamie</strong><br>6 à 7 am</td>
+                     
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">7 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                      
+                        <td></td>
+                        <td></td>
+                        <td class="creation-chandeliers"  rowspan="10" ><strong>Atelier chandeliers</strong><br>7 à 12 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2">8 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class=agenda-mamie rowspan="4"><strong>Enterrement de mamie</strong><br>8 à 10 am</td>
+                        <td></td>
+                       
+                     
+                    </tr>
+                     <tr>
+                        <td rowspan="2">9 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                     
+                    </tr>
+                    <tr>
+                        <td class="agenda-mamie" rowspan="6"><strong>Notaire pour mamie</strong><br>9 à 12 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+              
+                     
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    
+                       
+                    </tr>
+                    <tr>
+                      
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    
+                     
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2">11 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      
+                    
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                 
+                     
+                    </tr>
+                     <tr>
+                        <td rowspan="2">12 am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                      
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">1 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">4 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td  class="agenda-alex" rowspan="4"><strong>Train retour</strong><br>4 à 6 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                   
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+   
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">6 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+              
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">7 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="agenda-repassage" rowspan="8"><strong>Repassage de chemises avec les amis</strong><br>7 à 11 pm</td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">8 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">9 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                  
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                 
+                     
+                    </tr>
+                    <tr>
+                        <td rowspan="2">11 pm</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     
+                    </tr>
+
+
+
+               </tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </table>
+
+
+                
+         </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+
+</html>

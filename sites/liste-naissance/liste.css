@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,500;1,700&display=swap');
+
+
+
+body{
+    margin: 0px;
+    background-color: rgb(255, 242, 249);
+}
+
+header{
+    background-color:  rgb(240, 204, 225) ;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+header h1{
+    color: rgb(255, 253, 242);
+}
+
+.imagesheader{
+    display: block;
+    width:60px;
+    height: 60px;
+    margin: auto;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+header, footer, caption{
+    font-family: 'Mali', cursive;
+}
+
+
+
+h1{
+    font-family: 'Mali', cursive;
+    font-weight: 1000 ;
+}
+
+
+
+
+/**------------------tableaux--------------------**/
+
+
+table{
+margin-bottom: 30px;
+}
+
+
+caption{
+    margin: 30px;
+    font-size: 1.2em;
+}
+
+
+h2{
+    padding: 5px;
+    margin: 0px;
+}
+
+
+.conteneurlienimage{
+    text-align: center;
+}
+
+.imagelien{
+    width: 150px;
+}
+
+h4{
+    margin: 0px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.détails {
+    font-size: 0.8em;
+}
+.liencategorie{
+    font-size: 0.8em;
+}
+
+
+.prixetcoeur{
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+}
+
+.detailprix{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.coeur{
+    width: 24px;
+    padding-top: 3px;
+}   
+
+.liencategorie{
+    text-align: center;
+}
+
+.boutonachat{
+    display: flex;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    height: 40px;
+}
+
+.celluleboutondejaoffert{
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgb(153, 153, 153);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.boutonoffrir{
+    display: block;
+    width: 45%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgb(223, 128, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cellulebouton{
+    padding: 5px;
+}
+
+.boutonoffrir:hover {
+    background-color: rgb(240, 21, 149);
+}
+
+
+table{
+    border-spacing: 70px 0px;
+    width: 100%
+}
+    
+
+.cellulebouton, .celluleprixetcoeur, .liencategorie{
+    border-top: solid 1px rgb(174, 174, 174); ;
+ }
+
+  td, th{
+    width: 20%;
+    background-color: rgb(255, 255, 255);   
+ }
+
+
+#lienpanier{
+    display: block;
+    width: 36%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgb(223, 128, 180);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 90px;
+}
+
+#lienpanier:hover {
+    background-color: rgb(240, 21, 149);
+  }
+
+
+  
+
+
+
+
+  /**------------------------formulaire-----------------------------------------------**/
+
+
+.listearticleformulaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+ }
+
+.selectiondetailsarticle{
+    display: flex;
+    justify-content: center;
+}
+
+.choixcouleurtaille{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.celluleboutondejaoffertformulaire{
+    margin: 0px;
+    margin-right: 10px;
+    display: block;
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: rgb(153, 153, 153);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.titrearticleform{
+    width: 150px;
+    padding-left: 20px;
+}
+
+ .listedescriptionformulaire{
+     font-size: 0.8em;
+     width: 250px;
+}
+
+#number{
+    width: 40px;
+}
+
+#titrebasformulaire{
+  text-align: center;
+  margin: 40px;
+  font-size: 3em;
+}
+
+.coordonnees{
+    text-align: center;
+}
+
+.adresse{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+ #titreadresse{
+    text-align: center;
+    margin: 40px;
+    font-size: 2em;
+    font-family: 'Mali', cursive;
+ }
+
+ #commentaires{
+     margin: 0px;
+ }
+
+
+ 
+  /**----------------------footer--------------------**/
+
+
+  footer, .footerreseaux{
+    font-size: 1.3em;
+    color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+  justify-content: center;    
+      background-color:  rgb(240, 204, 225) ;
+    list-style: none;
+}
+
+.icon{
+    height: 25px;
+    margin-left: 40px;
+}
+
+
+

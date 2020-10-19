@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+html{
+    width: 100vw
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+
+header{
+    height: 16vh;
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 6;
+}
+
+header img{
+    width: 280px;
+    height: 80px;
+}
+
+header nav{
+    width: 60vw;
+    justify-content: space-around;
+    display: flex;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+}
+header nav a:hover{
+    color: rgb(237, 237, 237);
+}
+
+/**-------------------------------page accueil-------------------*/
+
+#premier-scrool{
+    display: flex;
+    height: 84VH;
+    background-color: rgb(49, 49, 49);
+}
+#presentation-vsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+#presentation-vsc h1{
+    font-size: 3em;
+    color: rgb(242, 242, 242);
+    margin: 2%;
+    font-family: 'Piazzolla', serif;
+}
+#presentation-vsc h2{
+    font-size: 2.5em;
+    color: rgb(242, 242, 242);
+    margin: 2%;
+    font-family: 'Piazzolla', serif;
+}
+#presentation-vsc p{
+    font-size: 1.5em;
+    color: rgb(174, 174, 174);
+    text-align: center;
+    margin: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Piazzolla', serif;
+}
+#presentation-vsc a{
+    font-size: 1.2em;
+    color: rgb(174, 174, 174);
+    text-align: center;
+    background-color: blue;
+    text-decoration: none;
+    padding: 20px;
+    margin: 2%;
+}
+#presentation-vsc a:hover{
+    color: grey;
+}
+
+#capture-vsc{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#capture-vsc img{
+width: 80%;
+}
+
+/**-------------------------------section 2-------------------*/
+
+#section2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+#image-section2{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#article-section2{
+    width: 60vw;
+}
+#article-section2 h1, p{
+    margin-left: 10%;
+    margin-right: 20%;
+    color: rgb(109, 109, 109);
+    font-family: 'Piazzolla', serif;
+}
+#article-section2 h1{
+    margin-bottom: 5%;
+    font-size: 1.5em;
+}
+#article-section2 p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/**-------------------------------section 3-------------------*/
+
+#section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background-color: rgb(243, 243, 243);
+}
+#image-section3{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#article-section3{
+    width: 60vw;
+}
+#article-section3 h1, p{
+    margin-left: 10%;
+    margin-right: 20%;
+    color: rgb(109, 109, 109);
+    font-family: 'Piazzolla', serif;
+}
+#article-section3 h1{
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+#article-section3 p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/**-------------------------------section 4-------------------*/
+
+#section4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+#image-section4{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#article-section4{
+    width: 60vw;
+}
+#article-section4 h1, p{
+    margin-left: 10%;
+    margin-right: 20%;
+    color: rgb(109, 109, 109);
+    font-family: 'Piazzolla', serif;
+}
+#article-section4 h1{
+    margin-bottom: 5%;
+    font-size: 1.5em;
+}
+#article-section4 p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/**-------------------------------section 5-------------------*/
+
+#youtube{
+    background-color: rgb(243, 243, 243);
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#youtube h1{
+    padding-top: 4%;
+    color: rgb(109, 109, 109);
+    font-family: 'Piazzolla', serif;
+}
+#youtube iframe{
+    padding-bottom: 4%;    
+}
+
+/**-------------------------------section 6-------------------*/
+
+#reseaux-sociaux{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#reseaux-sociaux-nav{
+    text-align: center;
+}
+#reseaux-sociaux h1{
+    margin-top: 7%;
+    color: rgb(109, 109, 109);
+    font-family: 'Piazzolla', serif;
+}
+#reseaux-sociaux nav{
+    margin-bottom: 7%;
+}
+
+#reseaux-sociaux-nav a{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#reseaux-sociaux-nav img{
+    width: 10%;
+}
+
+
+
+/**-------------------------------VIEUX CODE-------------------*/
+
+
+
+/**-------------------FOOTER-------------------------*/
+
+footer{
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+    padding-right: 3%;
+    padding-left: 3%;
+}
+footer nav a:hover{
+    color: rgb(237, 237, 237);
+}
+footer nav img{
+    width: 30px;
+}
+#footer-nav{
+    width: 70vw;
+}
+#footer-nav-sociaux{
+    width: 20vw;
+}

@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 14vh;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    border-top: 1px solid rgb(136, 136, 136);
+}
+#div-menu-hamb{
+    width: 5vw;
+    padding-left: 2vw;
+    position: static;
+}
+#menu-hamb{
+    height: 5vh;
+    padding: 10%;
+}
+header #menu-hamb:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+#logo-agenda{
+    height: 10vh;
+    }
+#div-img-agenda{
+    width: 8vw;
+}
+header h1{
+    width: 20vw;
+    font-size: 1.3em;
+}
+header a{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.fleches{
+    height: 3vh;
+    max-width:  10vw;
+}
+header .fleches:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+header h2{
+    font-size: 2em;
+    flex-grow: 3;
+    text-align: center;
+}
+header form{
+    display: flex;
+    flex-grow: 5;
+    justify-content: center;
+    height: 40%;
+}
+header select{
+    width: 30%;
+}
+
+/*--------------------------------------------------------------main-----------------------------------*/
+
+main{
+    display: flex;
+}
+
+main aside{
+    width: 20vw;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 80vw;
+}
+
+
+/*___________________________________________aside_____________________________________________________*/
+
+#img-bouton-creer{
+   width: 20%;
+   margin-left: 5%;
+}
+#boutton-creer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: white;
+}
+#boutton-creer:hover{
+     box-shadow: 0px 2px 10px grey;
+}
+#boutton-creer h4{
+    font-size: 1.5em;
+    margin-right: 5%;
+}
+
+
+#mini-agenda{
+    width: 80%;
+}
+#mini-agenda td{
+    width: 10%;
+    padding: 3%;
+
+}
+.bouttons-mini-agenda{
+    width: 70%;
+}
+.autre-mois{
+    color: rgb(189, 189, 189);
+}
+#form-mes-agendas{
+    display: flex;
+    flex-direction: column;
+}
+#mes-agendas{
+    width: 90%;
+    margin-top: 5%;
+}
+#mes-agendas h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#mes-agendas input{
+    margin: 3%;
+}
+
+.agendas-a-cocher{
+    display: flex;
+    align-items: center;
+}
+
+
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label[for="Alexandre-Leroux"]:before {
+    background-color: rgb(40, 20, 220);
+    border-color:  rgb(40, 20, 220);
+    color: #fff;
+  }
+
+  input[type=checkbox]:checked + label[for="Mamie-Simone"]:before {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+  }
+
+  input[type=checkbox]:checked + label[for="Création-de-chandeliers"]:before {
+    background-color:  rgb(211, 237, 67);;
+    border-color:  rgb(211, 237, 67);;
+    color: #fff;
+  }
+
+  input[type=checkbox]:checked + label[for="Soirée-repassage"]:before {
+    background-color: rgb(67, 237, 73);
+    border-color:  rgb(67, 237, 73);
+    color: #fff;
+  }
+  
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }
+
+/*_____________________________________________agenda principal___________________________________________*/
+
+
+
+#section-centrale {
+    width: 100%;
+    height: 84vh;
+    overflow: scroll;   
+    overflow-x: hidden; 
+}
+.tableau-jours{
+    height: 60px;
+    background-color: white;
+}
+
+#cellule-vide{
+    background-color: white;
+    width: 4%;
+}
+
+
+#section-centrale table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#section-centrale td{
+    height: 5vh;
+    width: 15%;
+
+}
+
+thead th{
+    position: sticky; top: 0;
+}
+
+
+#section-centrale td{
+    border-bottom: 1px solid rgb(202, 202, 202);
+    border-right: 1px solid rgb(202, 202, 202);
+}
+
+
+.agenda-mamie{
+    background-color: crimson;
+    vertical-align: text-top;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.agenda-alex{
+    background-color: rgb(40, 20, 220);
+    vertical-align: text-top;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+   
+}
+
+.creation-chandeliers{
+    background-color: rgb(211, 237, 67);
+    vertical-align: text-top;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.agenda-repassage{
+    background-color: rgb(67, 237, 73);
+    vertical-align: text-top;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------formulaire creer*/
+
+
+
+
+#formulaire-creer{
+
+    width: 40vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15vh; left: 30vw;
+    box-shadow: 0px  0px 40px black;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+#formulaire-creer img{
+height: 60px;
+}
+#formulaire-creer input, select, option, textarea{
+    height: 40px;
+    color: rgb(150, 150, 150);
+    margin-left: 10%;
+}
+
+
+#formulaire{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.lignes-formulaire{
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+}
+
+#formulaire-creer #titre{
+    height: 60px;
+    width: 100%;
+    font-size: 2em;
+    border-bottom: solid 3px blueviolet;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+#boutton-enregistrer{
+    
+    background-color:  blueviolet;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    
+}
+#div-boutton-enregistrer{
+    justify-content: center;
+    height: 10%;
+    width: 60%;
+    margin: auto;
+}
+
+
+#AL{
+    background-color: rgb(40, 20, 220);
+    color: white;
+}
+#MS{
+    background-color:  crimson;
+    color: white;
+}
+#SR{
+    background-color: rgb(67, 237, 73);
+    color: white;
+}
+#CDC{
+    background-color: rgb(211, 237, 67);
+    color: white;
+}

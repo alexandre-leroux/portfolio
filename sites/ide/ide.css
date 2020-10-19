@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+html{
+    width: 100vw
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+header{
+    height: 16vh;
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 6;
+}
+
+header img{
+    width: 300px;
+    height: 80px;
+}
+
+header nav{
+    width: 60vw;
+    justify-content: space-around;
+    display: flex;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+}
+header nav a:hover{
+    color: rgb(237, 237, 237);
+}
+
+/**-------------------------------page accueil-------------------*/
+
+#page-accueil{
+    background-image: url(accueil/image-accueil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 84vh;
+}
+
+#page-accueil h6{
+    color: crimson;
+    font-size: 2em;
+}
+#page-accueil h1{
+    color: rgb(233, 233, 233);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+#page-accueil h4{
+    color: rgb(136, 136, 136);
+}
+#titres{
+   margin-left: 10%;
+   padding-top: 15%;
+}
+
+
+
+/**-------------------------------page sublim text-------------------*/
+
+
+#page-sublim{
+    width: 100vw;
+    height: 85vh;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#img-sublim{
+    width: 30vw;
+}
+#img-sublim img{
+    width: 25vw;
+    min-width: 20%;
+}
+#page-sublim h1{
+    color: rgb(187, 0, 37);
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    
+}
+#titres-sublime h4{
+    color: rgb(189, 189, 189);
+    font-size: 1.2em;
+}
+#titres-sublime{
+    width: 30vw;
+}
+
+ /**-------------------------------page vsc-------------------*/
+
+
+
+#vsc{
+    width: 100vw;
+    height: 85vh;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#img-vsc img{
+    width: 25vw;
+    min-width: 20%;
+}
+#img-vsc{
+    width: 30vw;
+}
+#titres-vsc h1{
+    color: rgb(187, 0, 37);
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    
+}
+#titres-vsc h4{
+    color: rgb(189, 189, 189);
+    font-size: 1.2em;
+}
+#titres-vsc{
+    width: 30vw;
+}
+
+
+ /**-------------------------------page netbeans-------------------*/
+
+ #page-netbeans{
+    width: 100vw;
+    height: 85vh;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#img-netbeans{
+    width: 30vw;
+}
+#img-netbeans img{
+    width: 25vw;
+    min-width: 20%;
+}
+#page-netbeans h1{
+    color: rgb(187, 0, 37);
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    
+}
+#titres-netbeans h4{
+    color: rgb(189, 189, 189);
+    font-size: 1.2em;
+}
+#titres-netbeans{
+    width: 30vw;
+}
+
+
+/**-------------------zoom vignette ide-------------------------*/
+
+#img-netbeans img, #img-vsc img, #img-sublim img{
+    transition: transform .1s;
+}
+#img-netbeans img:hover, #img-vsc img:hover, #img-sublim img:hover{
+    transform: scale(1.1);
+}
+    
+/**-------------------FOOTER-------------------------*/
+
+footer{
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(143, 143, 143);
+    padding-right: 3%;
+    padding-left: 3%;
+}
+footer nav a:hover{
+    color: rgb(237, 237, 237);
+}
+footer nav img{
+    width: 30px;
+}
+#footer-nav{
+    width: 70vw;
+}
+#footer-nav-sociaux{
+    width: 20vw;
+}
